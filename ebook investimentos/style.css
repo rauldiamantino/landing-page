@@ -76,3 +76,47 @@ div#texto > h2 {
 .bt:hover {
     background-color: rgb(216, 216, 2);
 }
+
+.popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 700px;
+    height: 350px;
+    display: block;
+    background-color: white;
+    color: black;
+}
+
+.topo {
+    background-color: gray;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: white;
+    
+}
+.popup h1 {
+    font-size: 1.8em;
+}
+
+.bt2 {
+    box-shadow: inset 0px -1px 2px 1px rgba(0, 0, 0, 0.342);
+    border-radius: 3px; 
+    background-color: orange;
+    color: white;
+    text-shadow:0px 1px 0px rgba(255, 255, 255, 0.479);
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 10px;
+    padding: 15px 160px;
+    text-decoration: none;
+}
+
+.bt2:hover {
+    background-color: rgb(226, 148, 4);;
+}

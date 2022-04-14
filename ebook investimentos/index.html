@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-book Gratuito</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        function abrir() {
+            document.getElementById('popup').style.display = 'block';
+        }
+        function fechar() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
 </head>
 <body>  
     <main>
@@ -21,9 +29,25 @@
                 Este livro digital já foi <strong>baixado por mais de 2 milhões de pessoas</strong>, através das informações disponibilizadas nele, você  vai ser capaz de <strong>admnistrar sua carteira de investimentos</strong> de forma <strong>segura</strong> e <strong>rentável</strong>.
             </p>
             
-            <a href="#" class="bt">DOWNLOAD GRÁTIS AQUI</a>
-            
+            <a href="javascript: abrir();" class="bt">DOWNLOAD GRÁTIS AQUI</a>
         </div>
+
+        <section id="popup" class="popup">
+            <div class="topo">
+                <h1>ÓTIMO! Vou enviar para o SEU EMAIL</h1>
+                <p>Digite seu Email abaixo para receber de graça!</p>
+            </div>
+            <div class="corpo">
+                <form action="#">
+                    <input type="Digite seu email aqui">
+                    <p> <input type="checkbox"> Confirmo que aceito receber conteúdos e compreendo que posso me descadastrar dessa comunicação a qualquer momento, de acordo com os <strong>Termos de Uso</strong> e a <strong>Política de Privacidade</strong>.</p>
+                       <a href="javascript: fechar();" class="bt2">BAIXAR GRÁTIS AQUI</a>
+                    <p>Claro, seus dados estão 100% seguros!</p>
+                </form>
+            </div>
+                
+            
+        </section>
     </main>
 
 </body>
