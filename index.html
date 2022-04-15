@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebook Grátis</title>
+    <link rel="stylesheet" href="style.css">    
+    <script type="text/javascript">
+        function abrir() {
+            document.getElementById('pop-up').style.display = 'block';
+        }
+        function fechar() {
+            document.getElementById('pop-up').style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    
+    <!-- HTML do conteúdo principal -->
+    
+    <main class="conteudo">
+        <section class="conteudo-principal">
+            <img src="imagens/e-book-pq.png" alt="Ebook" class="conteudo-principal-imagem">
+            <div class="conteudo-principal-texto">
+                <h1 class="conteudo-principal-texto-titulo">Ebook Gratuito</h1>
+                <h2 class="conteudo-principal-texto-subtitulo">Como Proteger Seu Patrimônio Nos Investimentos (Passo a Passo)</h2>
+                <p class="conteudo-principal-texto-paragrafo">Este livro digital já foi <strong>baixado por mais de 2 milhões de pessoas</strong>, através das informações disponibilizadas nele, você vai ser capaz de <strong>admnistrar sua carteira de investimentos</strong> de forma <strong>segura</strong> e <strong>rentável</strong>.</p>
+
+                <a href="javascript: abrir();">
+                    <button class="conteudo-principal-texto-botao">DOWNLOAD GRÁTIS AQUI</button>
+                </a>
+            </div>
+        </section>
+
+        <!-- Abaixo temos o HTML do Pop-Up para capturar o e-mail -->
+
+        <section id="pop-up" class="pop-up">
+            <a href="javascript: fechar();"><img src="imagens/btfechar.png" alt="fechar" class="pop-up-botao-fechar"></a>
+            <header class="pop-up-cabecalho">
+                <h1 class="pop-up-cabecalho-titulo">ÓTIMO! Vou Enviar Para SEU EMAIL</h1>
+                <h2 class="pop-up-cabecalho-subtitulo">Digite seu Email abaixo para receber de graça!</h2>
+            </header>
+            <main class="pop-up-conteudo">
+                <form action="#" class="pop-up-conteudo-formulario">        
+                    <input type="email" value="Digite aqui seu melhor e-mail..." class="pop-up-conteudo-formulario-email">
+                    <p class="pop-up-conteudo-formulario-paragrafo"> 
+                        <input type="checkbox"> 
+                            Confirmo que aceito receber conteúdos e compreendo que posso me descadastrar dessa comunicação a qualquer momento, de acordo com os <strong>Termos de Uso</strong> e a <strong>Política de Privacidade</strong>.
+                    </p>
+                    <button class="pop-up-conteudo-formulario-botao">BAIXAR GRÁTIS AQUI</button>
+                </form>
+            </main>
+            <footer class="pop-up-conteudo-rodape">
+                <p class="pop-up-conteudo-rodape-subtitulo">Claro, seus dados estão 100% seguros!</p>
+            </footer>
+        </section>
+    </main>    
+</body>
+</html>

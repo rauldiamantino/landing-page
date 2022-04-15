@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*Informações da página principal*/
+
+body {
+    background-image: linear-gradient(to bottom, #002a3b,#001c27);
+    background-attachment: fixed;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.conteudo-principal-texto{
+    padding: 20px;
+    max-width: 600px;    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.conteudo-principal-texto-titulo{
+    font-size: 2.2em;
+    color: white;
+}
+
+.conteudo-principal-texto-subtitulo{
+    font-size: 2em;
+    color: yellow;
+}
+
+.conteudo-principal-texto-paragrafo{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    line-height: 1.4em;
+    font-weight: none;
+    color: white;
+}
+
+.conteudo-principal-texto-botao {
+    width: 350px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.4em;
+    font-weight: bolder;
+    background-color: yellow;
+    color: #002a3b;
+    cursor: pointer;
+}
+
+.conteudo-principal-texto-botao:hover {
+    background-color: rgb(231, 231, 4);
+}
+
+
+/*Abaixo estão as informações do pop-up*/
+
+.pop-up {
+    border-radius: 15px; 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+    width: 50vw;
+    min-width: 400px;
+    height: 390px;
+    background-color: rgb(200, 225, 233);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.pop-up-botao-fechar {
+    float: right;
+    margin: -20px -35px 0 0;
+    cursor: pointer;
+}
+
+.pop-up-cabecalho{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 15px 15px 0px 0px; 
+    background-color: rgb(58, 57, 57); 
+    text-align: center;
+    padding: 25px;
+    margin-top: -2px;
+}
+
+.pop-up-cabecalho-titulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    color: white;
+}
+
+.pop-up-cabecalho-subtitulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color: gray;
+    font-weight: lighter;
+}
+
+.pop-up-conteudo {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: rgb(200, 225, 233);
+}   
+
+.pop-up-conteudo-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pop-up-conteudo-formulario-email {
+    padding: 15px ;
+    border: solid 2px rgb(86, 192, 228);
+    border-radius: 3px; 
+    color: gray;
+}
+
+.pop-up-conteudo-formulario-paragrafo{
+    color: gray;
+}
+
+.pop-up-conteudo-formulario-paragrafo > strong {
+    color: rgb(48, 48, 48);
+}
+
+.pop-up-conteudo-formulario-botao {
+    padding: 15px;
+    background-color: orange;
+    font-size: 1.1em;
+    color: rgba(255, 255, 255, 0.87);
+    border: none;
+    box-shadow: inset 0px -1px 2px 1px rgba(0, 0, 0, 0.342);
+    border-radius: 3px; 
+    cursor: pointer;
+}
+
+.pop-up-conteudo-formulario-botao:hover {
+    background-color: rgb(207, 136, 3);
+}
+
+.pop-up-conteudo-rodape {
+    border-radius: 0px 0px 15px 15px; 
+    padding-bottom: 15px;
+    font-size: 1em;
+    color: gray;
+    font-weight: lighter;
+    text-align: center;
+    background-color: rgb(200, 225, 233);
+}
