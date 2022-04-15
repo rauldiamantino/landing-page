@@ -76,7 +76,7 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    display: none;
+    display: block;
     width: 47vw;
     min-width: 400px;
     height: 390px;
@@ -85,9 +85,9 @@ body {
 }
 
 .pop-up-botao-fechar {
-    float: right;
-    margin: -20px -35px 0 0;
     cursor: pointer;
+    margin: -400px -12px 0 0 ;
+    float: right;
 }
 
 .pop-up-cabecalho{
