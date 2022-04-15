@@ -76,7 +76,7 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    display: block;
+    display: none;
     width: 47vw;
     min-width: 400px;
     height: 390px;
