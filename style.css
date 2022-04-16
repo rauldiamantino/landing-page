@@ -76,9 +76,9 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    display: none;
-    width: 47vw;
-    min-width: 400px;
+    display: BLOCK;
+    width: 70vw;
+    max-width: 600px;
     height: 45vh;
     background-color: rgb(200, 225, 233);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
